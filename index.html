@@ -2,21 +2,39 @@
 <html lang="en">
 	<head>
     <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="styles/index.css"
 		<meta charset="UTF-8">
-		<title>Page Title</title>
-	<script src="components/header.js" type="text/javascript" defer></script>
+		<title>Home</title>
+	<script src="components/footer.js" type="text/javascript" defer></script>
+
 	</head>
 
-	<header-component></header-component>
-
 	<body>
-		<section>
+		<section class="circle-container">
+			<div
+				class="circle"
+			>
+				<input 
+				class="buttons-circle"
+				style="--n:0"
+				onclick="location.href='pages/about.html'"
+				value="ABOUT ME" type="button">
 
+				<input 
+				class="buttons-circle"
+				style="--n:1"
+				value="DRAWINGS" type="button">
+
+				<input 
+				class="buttons-circle"
+				style="--n:2"
+				value="DEV. PROJECTS" type="button">
+			</div>
 		</section>
-    
+
+		
 	</body>
 
-	<footer>
+	<footer-component/>
 
-	</footer>
 </html>

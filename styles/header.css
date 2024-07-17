@@ -11,27 +11,28 @@
 }
 
 .header-nav li:first-child {
-    font-size: 50px;
+    font-size: 48px;
+}
+
+.header-nav li:hover{
+    cursor: pointer;
 }
 
 .header-nav a:visited {
     color:black;
-
 }
 
-.header-nav li:nth-child(2) {
+.header-nav li:nth-child(n+2) {
     text-align: center;
-}
-
-.header-nav li:last-child{
-    background-color: var(--color-4);
+    background-color: var(--sunglow);
     color: black;
     border-radius: 16px;
     padding: 16px 32px;
+    transition: 0.4;
 }
 
-.header-nav li:last-child:hover{
+
+.header-nav li:nth-child(n+2):hover{
     background-color: var(--color-1);
     color:white;
-    cursor: pointer;
 }

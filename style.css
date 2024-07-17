@@ -3,7 +3,15 @@
 --color-2: #4d222c;
 --color-3: #9d654c;
 --color-4: #cfab51;
-/* --color-5: #5e2bff; */
+
+--black-olive: #1f271b;
+--rich-black: #101419;
+
+--sunglow: #ffd23f;
+--field-drab: #786115;
+
+--delft-blue: #3A405A;
+--powder-blue: #AEC5EB;
 
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
@@ -12,4 +20,15 @@ body{
   background-color: var(--color-1);
   padding: 0;
   margin: 0;
+  animation-name: animate-bg;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  position: relative;
+  min-height: 100vh;
+}
+
+@keyframes animate-bg{
+  from {background-color: var(--rich-black)}
+  to {background-color: var(--delft-blue);}
 }

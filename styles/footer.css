@@ -1,0 +1,12 @@
+
+#footer {
+    color: white;
+    background-color: var(--rich-black);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+#footer a:visited {
+    color: pink;
+}

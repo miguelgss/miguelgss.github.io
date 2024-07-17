@@ -1,0 +1,74 @@
+.buttons-circle {
+    display: inline-block;
+    height: 2em;
+    width: 8em;
+    background-color: var(--rich-black);
+    color: white;
+    font-size: large;
+    text-align: center;
+    transition: 0.4s;
+    font-size: 32px;
+
+    border-radius: 64px;
+    border-style: solid;
+
+    animation-name: float;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.buttons-circle:hover {
+    cursor: pointer;
+    background-color: var(--sunglow);
+    color: var(--rich-black);
+    border-color: var(--rich-black);
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.circle :nth-child(n+2) {
+    margin-left: calc(var(--n) * 4em);
+    margin-top: 5vh;
+}
+
+.circle {
+    height: 32em;
+    width: 32em;
+    background-color: var(--sunglow);
+    border-radius: 50%;
+    display: flex;
+    align-self: center;
+    border-color: var(--rich-black);
+    border-width: 1em;
+    border-style: solid;
+    flex-direction: column;
+    justify-content: inherit;
+
+    animation-name: float;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.circle-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

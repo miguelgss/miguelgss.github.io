@@ -8,11 +8,10 @@ class Header extends HTMLElement {
             <header>
                 <nav>
                     <ul class="header-nav">
-                        <li>Título bem zica</li>
-                        <li><a href="pages/about.html"> About </a></li>
-                        <li>Item</li>
-                        <li>Item</li>
-                        <li>Item</li>
+                        <li onclick="location.href='../index.html'">Home</li>
+                        <li onclick="location.href='about.html'">About</li>
+                        <li>Drawings</li>
+                        <li>Dev. Projects</li>
                     </ul>
                 </nav>
             </header>
@@ -22,7 +21,6 @@ class Header extends HTMLElement {
         styleSheet.rel = "stylesheet";
         styleSheet.href = document.location.href.includes("pages") ? "../styles/header.css" : "styles/header.css";
         document.head.append(styleSheet);
-        console.log(document.location.href);
     }
 }
 
