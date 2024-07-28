@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GERADOR FICHA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="page-container">
+    <h1>Gerador de Fichas</h1>
+
+    <hr>
+
+    <canvas id="ficha" width="420" height="150"></canvas>
+
+    <div class="options">
+      <div class="row">
+        <label>
+          Character:
+          <select name="personagem" id="personagem" onchange="personagemEscolhida()">
+            <option value="random">Random</option>
+            <option value="alice">Alice</option>
+            <option value="aya">Aya</option>
+            <option value="cirno">Cirno</option>
+            <option value="iku">Iku</option>
+            <option value="komachi">Komachi</option>
+            <option value="marisa">Marisa</option>
+            <option value="meiling">Meiling</option>
+            <option value="okuu">Okuu</option>
+            <option value="patchouli">Patchouli</option>
+            <option value="reimu">Reimu</option>
+            <option value="reisen">Reisen</option>
+            <option value="remilia">Remilia</option>
+            <option value="sakuya">Sakuya</option>
+            <option value="sanae">Sanae</option>
+            <option value="suika">Suika</option>
+            <option value="suwako">Suwako</option>
+            <option value="tenshi">Tenshi</option>
+            <option value="youmu">Youmu</option>
+            <option value="yukari">Yukari</option>
+            <option value="yuyuko">Yuyuko</option>
+          </select>
+        </label>
+
+
+        <label class="picture-container">
+          Upload profile picture:
+          <input type="file" id="imageLoader" name="imageLoader" />
+        </label>
+      </div>
+
+      <div class="row">
+        <label>
+          Player name:
+          <input type="text" id="nome" name="nome" title="Player name" />
+        </label>
+
+        <label>
+          Text fill color:
+          <input type="text" id="textFill" name="textFill" title="Text fill color" />
+        </label>
+      </div>
+
+      <div class="row">
+        <label>
+          Text stroke color:
+          <input type="text" id="textStroke" name="textStroke" title="Text stroke color" />
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div>
+      <a href="https://github.com/miguelgss">Made by miguelgss</a>
+    </div>
+  </footer>
+  <script src="ficha.js"></script>
+</body>
+
+</html>
