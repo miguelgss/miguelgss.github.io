@@ -1,0 +1,17 @@
+.thumbnail{
+    width: 240px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 8px;
+    border-color: white;
+    border-width: 8px;
+    border-style: double;
+}
+
+.thumbnail-img{
+    flex-shrink: 0;    
+    width: 30vh;
+}

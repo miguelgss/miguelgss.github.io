@@ -9,13 +9,12 @@
     transition: 0.4s;
     font-size: 32px;
 
+    align-content: center;
+    padding: 0 8px;
+    text-decoration: none;
+
     border-radius: 64px;
     border-style: solid;
-
-    animation-name: float;
-    animation-iteration-count: infinite;
-    animation-duration: 6s;
-    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .buttons-circle:hover {
@@ -24,6 +23,95 @@
     color: var(--rich-black);
     border-color: var(--rich-black);
 }
+
+
+.circle-menu :nth-child(n) {
+    margin-left: calc(var(--n) * 4em);
+    margin-top: 5vh;
+}
+
+.circle-menu {
+    height: 32em;
+    width: 32em;
+    background-color: var(--sunglow);
+    border-radius: 50%;
+    display: flex;
+    align-self: center;
+    border-color: var(--rich-black);
+    border-width: 1em;
+    border-style: inset ;
+    flex-direction: column;
+    justify-content: inherit;
+
+    animation-name: float;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.circle-menu.hide{
+    display: none;
+}
+
+.triangle {
+    border: 300px solid transparent;
+    border-top: 0;
+    border-bottom: 600px solid var(--sunglow);
+    border-style: dotted;
+    position: absolute;
+}
+
+.circle-background {
+    border-radius: 50%;
+    border-color: var(--sunglow);
+    border-style: dashed;
+    position: absolute;
+    border-width: 8px;
+}
+
+.big-circle-bg {
+    width: 100%;
+    height: 100%;
+}
+
+.small-circle-bg{
+    width: 60%;
+    height: 100%;
+}
+
+.bg-rotate {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    overflow-y: hidden;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+}
+
+.bg-rotate div{
+    animation-name: rotate;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.circle-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/*Animations*/
+@keyframes rotate{
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
+}
+
 
 @keyframes float {
     0% {
@@ -39,36 +127,7 @@
     }
 }
 
-.circle :nth-child(n+2) {
-    margin-left: calc(var(--n) * 4em);
-    margin-top: 5vh;
-}
-
-.circle {
-    height: 32em;
-    width: 32em;
-    background-color: var(--sunglow);
-    border-radius: 50%;
-    display: flex;
-    align-self: center;
-    border-color: var(--rich-black);
-    border-width: 1em;
-    border-style: solid;
-    flex-direction: column;
-    justify-content: inherit;
-
-    animation-name: float;
-    animation-delay: 0.5s;
-    animation-iteration-count: infinite;
-    animation-duration: 6s;
-    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-
-}
-
-.circle-container {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+@keyframes slide {
+    from {max-height: 0;}
+    to {max-height: 500px;}
 }

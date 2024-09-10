@@ -1,0 +1,95 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0, .6);
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 0.6s;
+    animation-name: fadeIn;
+    animation-duration: 0.6s
+}
+
+.modal-content {
+    border-radius: 16px;
+    background-color: var(--sunglow);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: rgba(220, 255, 122, 0.19) 0px 10px 20px, rgba(255, 236, 131, 0.23) 0px 6px 6px;
+}
+
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+}
+
+.close:hover,
+.close:focus {
+    color: firebrick;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilização elementos modal */
+
+.project-card {
+    background-color: var(--rich-black);
+    border-radius: 16px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 30vh;
+    text-align: justify;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.description {
+    background-color: var(--sunglow);
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 8px 0;
+}
+
+.name-link {
+    font-size: x-large;
+    color: var(--sunglow);
+}
+
+.status {
+    border-radius: 8px;
+    padding: 4px;
+    margin: 4px 0;
+}
+
+.finished {
+    background-color: greenyellow;
+}
+
+.developing {
+    background-color: var(--sunglow);
+}
+
+.cancelled {
+    background-color: gray;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }

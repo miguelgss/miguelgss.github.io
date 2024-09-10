@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    <link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="styles/index.css"
-		<meta charset="UTF-8">
-		<title>Home</title>
+
+<head>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="styles/index.css">
+	<link rel="stylesheet" href="styles/modal.css">
+	<link rel="stylesheet" href="styles/image.css">
+	<meta charset="UTF-8">
+	<meta name="viewport">
+	<meta name="description" content="Portfólio de Miguel Gustavo Silvério Silva">
+	<title>Home</title>
 	<script src="components/footer.js" type="text/javascript" defer></script>
+	<script src="scripts/modal.js" type="text/javascript" defer></script>
+</head>
 
-	</head>
+<body>
+	<section class="bg-rotate">
+		<div class="triangle"></div>
+		<div class="circle-background big-circle-bg"></div>
+		<div class="circle-background small-circle-bg"></div>
+	</section>
 
-	<body>
-		<section id="bg-circles-animated">
-			<div>
-				
-			</div>
-			<div>
+	<section class="circle-container">
+		<div class="circle-menu">
+			<span id="showProjects" class="buttons-circle" style="--n:1"> DEVELOPMENT
+			</span>
+			<a href="https://github.com/miguelgss" target="_blank" class="buttons-circle" style="--n:1">Github</a>
+		</div>
+	</section>
+
+	<section id="projects" class="modal">
+		<section class="modal-content">
+			<span class="close">&times;</span>
+			<div class="project-card">
+				<a class="name-link" href="pages/ficha-page/ficha.html">Gerador de fichas</a>
+				<div class="thumbnail">
+					<figure>
+						<img class="thumbnail-img" src="assets/ficha-thumb.png">
+					</figure>
+				</div>
+				<span class="description">
+					Permite gerar uma ficha de jogador com base nos personagens de Touhou 12.3. Permite customização de nome, foto de perfil e cores do texto.
+				</span>
+				<span class="status finished">
+					CONCLUÍDO
+				</span>
 			</div>
 		</section>
+	</section>
 
-		<section class="circle-container">
-			<div
-				class="circle"
-			>
-				<input 
-				class="buttons-circle"
-				style="--n:0"
-				onclick="location.href='pages/about.html'"
-				value="ABOUT ME" type="button">
+	<footer-component />
+</body>
 
-				<input 
-				class="buttons-circle"
-				style="--n:1"
-				value="DRAWINGS" type="button">
-
-				<input 
-				class="buttons-circle"
-				onclick="location.href='pages/ficha-page/ficha.html'"
-				style="--n:2"
-				value="DEV. PROJECTS" type="button">
-			</div>
-		</section>
-
-		<footer-component/>
-	</body>
 </html>

@@ -29,6 +29,10 @@ body{
 }
 
 @keyframes animate-bg{
-  from {background-color: var(--rich-black)}
-  to {background-color: var(--delft-blue);}
+  from {
+    background-color: var(--rich-black)
+  }
+  to {
+    background-color: var(--delft-blue);
+  }
 }
