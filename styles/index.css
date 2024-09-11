@@ -127,6 +127,42 @@
     height: 100vh;
 }
 
+.title-author {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--rich-black);
+    font-weight: 900;
+    -webkit-text-stroke: 2px var(--sunglow);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+
+    animation-name: float;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    top: 2rem
+}
+
+.title-author span:first-child{
+    font-size: 12rem;
+    -webkit-transform:scale(2,1); /* Safari and Chrome */
+    -moz-transform:scale(2,1); /* Firefox */
+    -ms-transform:scale(2,1); /* IE 9 */
+    -o-transform:scale(2,1); /* Opera */
+    transform:scale(2,1); /* W3C */
+}
+
+.title-author span:last-child{
+    font-size: 3.2rem
+}
+
 /*Animations*/
 @keyframes rotate{
     from{ transform: rotate(-360deg); }
