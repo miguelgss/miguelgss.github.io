@@ -11,6 +11,7 @@
 --field-drab: #786115;
 
 --delft-blue: #3A405A;
+--delft-blue-darker: #1e212c;
 --powder-blue: #AEC5EB;
 
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
@@ -21,7 +22,7 @@ body{
   padding: 0;
   margin: 0;
   animation-name: animate-bg;
-  animation-duration: 8s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   position: relative;
@@ -30,9 +31,9 @@ body{
 
 @keyframes animate-bg{
   from {
-    background-color: var(--rich-black)
+    background-color: var(--delft-blue)
   }
   to {
-    background-color: var(--delft-blue);
+    background-color: var(--rich-black);
   }
 }
