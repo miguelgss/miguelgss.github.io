@@ -179,7 +179,7 @@
     }
 }
 
-@media (max-height: 700px){
+@media (max-height: 640px){
     .title-author{ display: none };
 }
 
