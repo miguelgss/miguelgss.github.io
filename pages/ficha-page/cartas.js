@@ -1,0 +1,82 @@
+export const systemcards = [
+    "card000.png",
+    "card001.png",
+    "card002.png",
+    "card003.png",
+    "card004.png",
+    "card005.png",
+    "card006.png",
+    "card007.png",
+    "card008.png",
+    "card009.png",
+    "card010.png",
+    "card011.png",
+    "card012.png",
+    "card013.png",
+    "card014.png",
+    "card015.png",
+    "card016.png",
+    "card017.png",
+    "card018.png",
+    "card019.png",
+    "card020.png"
+];
+
+export const skillcards = [
+    "card100.png",
+    "card101.png",
+    "card102.png",
+    "card103.png",
+    "card104.png",
+    "card105.png",
+    "card106.png",
+    "card107.png",
+    "card108.png",
+    "card109.png",
+    "card110.png",
+    "card111.png",
+    "card112.png", 
+    "card113.png", 
+    "card114.png"
+];
+
+export const spellcards = [
+    "card200.png",
+    "card201.png",
+    "card202.png",
+    "card203.png",
+    "card204.png",
+    "card205.png",
+    "card206.png",
+    "card207.png",
+    "card208.png",
+    "card209.png",
+    "card210.png",
+    "card211.png",
+    "card212.png",
+    "card213.png",
+    "card214.png"
+];
+
+export const characterValues = [
+    "alice",
+    "aya",
+    "cirno",
+    "iku",
+    "komachi",
+    "marisa",
+    "meiling",
+    "okuu",
+    "patchouli",
+    "reimu",
+    "reisen",
+    "remilia",
+    "sakuya",
+    "sanae",
+    "suika",
+    "suwako",
+    "tenshi",
+    "youmu",
+    "yukari",
+    "yuyuko"
+];

@@ -1,11 +1,10 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="icon" href="assets/icon-ficha.png" type="image/webp" >
+  <link rel="icon" href="assets/icon-ficha.png" type="image/webp">
   <title>GERADOR FICHA</title>
   <link rel="stylesheet" href="style.css">
   <script src="../../components/footer.js" type="text/javascript" defer></script>
@@ -13,18 +12,18 @@
 </head>
 
 <body>
-  <div class="page-container">
+  <div class="page-container wrapper">
     <h1>Gerador de Fichas</h1>
 
     <hr>
 
     <canvas id="ficha" width="420" height="150"></canvas>
-    <button onclick="draw()">Reload</button>
+    <span id="reload" class=reload title="Click to reload the image.">&#x21bb;</span>
     <div class="options">
       <div class="row">
         <label>
           Character:
-          <select name="personagem" id="personagem" onchange="personagemEscolhida()">
+          <select name="personagem" id="personagem">
             <option value="random">Random</option>
             <option value="alice">Alice</option>
             <option value="aya">Aya</option>
@@ -49,7 +48,6 @@
           </select>
         </label>
 
-
         <label class="picture-container">
           Upload profile picture:
           <input type="file" id="imageLoader" name="imageLoader" />
@@ -64,21 +62,83 @@
 
         <label>
           Text fill color:
-          <input type="text" id="textFill" name="textFill" title="Text fill color" />
+          <div class="color-input-wrapper">
+            <input type="color" id="textFill" name="textFill" title="Text fill color" />
+          </div>
+        </label>
+
+        <label>
+          Text stroke color:
+          <div class="color-input-wrapper">
+            <input type="color" id="textStroke" name="textStroke" title="Text stroke color" />
+          </div>
         </label>
       </div>
 
       <div class="row">
         <label>
-          Text stroke color:
-          <input type="text" id="textStroke" name="textStroke" title="Text stroke color" />
+          Local:
+          <input type="text" id="regiao" name="regiao" title="Region" />
         </label>
-      </div>
-    </div>
-  </div>
 
-  <footer-component/>
-  <script src="ficha.js"></script>
+        <div>
+          <label>
+            Category of cards:
+            <select name="categoryCards" id="categoryCards">
+              <option disabled selected value> -- select an option -- </option>
+              <option value="system">System</option>
+              <option value="alice">Alice</option>
+              <option value="aya">Aya</option>
+              <option value="cirno">Cirno</option>
+              <option value="iku">Iku</option>
+              <option value="komachi">Komachi</option>
+              <option value="marisa">Marisa</option>
+              <option value="meiling">Meiling</option>
+              <option value="okuu">Okuu</option>
+              <option value="patchouli">Patchouli</option>
+              <option value="reimu">Reimu</option>
+              <option value="reisen">Reisen</option>
+              <option value="remilia">Remilia</option>
+              <option value="sakuya">Sakuya</option>
+              <option value="sanae">Sanae</option>
+              <option value="suika">Suika</option>
+              <option value="suwako">Suwako</option>
+              <option value="tenshi">Tenshi</option>
+              <option value="youmu">Youmu</option>
+              <option value="yukari">Yukari</option>
+              <option value="yuyuko">Yuyuko</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: center;">
+        <button id="removeOne" value="button" class="category-button">Remove 1 card</button>
+        <button id="removeAll" value="button" class="category-button">Clear all cards</button>
+      </div>
+
+      <span class="category-help">Select a category, then click on the cards you want to add.</span>
+      <section id="cartasGroup">
+      </section>
+
+    </div>
+
+
+  <hr>
+
+  <footer class="footer-ficha">
+    <a href="https://discord.gg/q2XcRh3Dzf" target="_blank" title="Hop on Gensou Arena!">
+      <img width="80" height="80" src="./assets/icon/circulo3.webp"/>
+      <figcaption>DISCORD</figcaption>
+    </a>
+
+    <a href="https://github.com/miguelgss" target="_blank">
+      <img height="80" src="./assets/icon/github.png"/>
+      <figcaption>MIGUELGSS</figcaption>
+    </a>
+  </footer>
+  </div>
+  <script type="module" src="ficha.js"></script>
 </body>
 
 </html>

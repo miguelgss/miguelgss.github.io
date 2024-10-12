@@ -4,6 +4,8 @@
     position: absolute;
     width: 100%;
     text-align: center;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 #footer a:visited {

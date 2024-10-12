@@ -12,7 +12,7 @@ class Footer extends HTMLElement {
 
         var styleSheet = document.createElement("link");
         styleSheet.rel = "stylesheet";
-        styleSheet.href = document.location.href.includes("pages") ? "../styles/footer.css" : "styles/footer.css";
+        styleSheet.href = document.location.href.includes("pages") ? "../../styles/footer.css" : "styles/footer.css";
         document.head.append(styleSheet);
     }
 }
