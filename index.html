@@ -1,62 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="styles/index.css" />
+        <link rel="stylesheet" href="styles/modal.css" />
+        <link rel="stylesheet" href="styles/image.css" />
+        <link rel="icon" href="assets/icon-index.webp" type="image/webp" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Portfólio de Miguel Gustavo Silvério Silva"
+        />
+        <title>Home</title>
+        <script
+            src="components/footer.js"
+            type="text/javascript"
+            defer
+        ></script>
+        <script src="scripts/modal.js" type="text/javascript" defer></script>
+    </head>
 
-<head>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="styles/index.css">
-	<link rel="stylesheet" href="styles/modal.css">
-	<link rel="stylesheet" href="styles/image.css">
-	<link rel="icon" href="assets/icon-index.webp" type="image/webp">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1" >
-	<meta name="description" content="Portfólio de Miguel Gustavo Silvério Silva">
-	<title>Home</title>
-	<script src="components/footer.js" type="text/javascript" defer></script>
-	<script src="scripts/modal.js" type="text/javascript" defer></script>
-</head>
+    <body>
+        <section class="bg-rotate">
+            <div class="poly-shapes rotate"></div>
+            <div class="circle-background small-circle-bg rotate-inverse"></div>
+            <div class="circle-background medium-circle-bg rotate"></div>
+            <div class="circle-background big-circle-bg rotate-inverse"></div>
+        </section>
 
-<body>
-	<section class="bg-rotate">
-		<div class="poly-shapes rotate"></div>
-		<div class="circle-background small-circle-bg rotate-inverse"></div>
-		<div class="circle-background medium-circle-bg rotate"></div>
-		<div class="circle-background big-circle-bg rotate-inverse"></div>
-	</section>
+        <section class="title-author">
+            <span>MP</span>
+            <span>MIGUEL'S PORTFOLIO</span>
+        </section>
 
-	<section class="title-author">
-		<span>MP</span>
-		<span>MIGUEL'S PORTFOLIO</span>
-	</section>
+        <section class="circle-container">
+            <div class="circle-menu">
+                <span id="showProjects" class="buttons-circle" style="--n: 1">
+                    DEVELOPMENT
+                </span>
+                <a
+                    href="https://github.com/miguelgss"
+                    target="_blank"
+                    class="buttons-circle"
+                    style="--n: 1"
+                    >Github</a
+                >
+            </div>
+        </section>
 
-	<section class="circle-container">
-		<div class="circle-menu">
-			<span id="showProjects" class="buttons-circle" style="--n:1"> DEVELOPMENT
-			</span>
-			<a href="https://github.com/miguelgss" target="_blank" class="buttons-circle" style="--n:1">Github</a>
-		</div>
-	</section>
+        <section id="projects" class="modal">
+            <section class="modal-content">
+                <header class="modal-header" style="text-align: right">
+                    <span class="close">&times;</span>
+                </header>
+                <div class="modal-body">
+                    <div class="project-card">
+                        <a class="name-link" href="pages/ficha-page/ficha.html"
+                            >Gerador de fichas</a
+                        >
+                        <div class="thumbnail">
+                            <figure>
+                                <img
+                                    class="thumbnail-img"
+                                    src="assets/ficha-thumb.png"
+                                />
+                            </figure>
+                        </div>
+                        <span class="description">
+                            Gera uma ficha de jogador com base nos
+                            personagens de Touhou 12.3.
+                            Nome, foto de perfil e cores do texto são configuráveis.
+                        </span>
+                        <span class="status finished"> CONCLUÍDO </span>
+                    </div>
 
-	<section id="projects" class="modal">
-		<section class="modal-content">
-			<span class="close">&times;</span>
-			<div class="project-card">
-				<a class="name-link" href="pages/ficha-page/ficha.html">Gerador de fichas</a>
-				<div class="thumbnail">
-					<figure>
-						<img class="thumbnail-img" src="assets/ficha-thumb.png">
-					</figure>
-				</div>
-				<span class="description">
-					Permite gerar uma ficha de jogador com base nos personagens de Touhou 12.3. Permite customização de nome, foto de perfil e cores do texto.
-				</span>
-				<span class="status finished">
-					CONCLUÍDO
-				</span>
-			</div>
-		</section>
-	</section>
+                    <div class="project-card">
+                        <a class="name-link" href="https://github.com/miguelgss/botGensouUtils" target="_blank"
+                            >Gerenciador de listas</a
+                        >
+                        <div class="thumbnail">
+                            <figure>
+                                <img
+                                    class="thumbnail-img"
+                                    src="assets/lista-thumb.png"
+                                />
+                            </figure>
+                        </div>
+                        <span class="description">
+                            App integrado ao discord para gerenciar ordem de jogadores a jogar
+                            entre si em ordem linear. Foi utilizado como estudo de
+                            python, e também para ver como a integração com a API do
+                            Discord funciona.
+                        </span>
+                        <span class="status developing"> CONTÍNUO </span>
+                    </div
+                </div>
+            </section>
+        </section>
 
-	<footer-component />
-</body>
-
+        <footer-component />
+    </body>
 </html>
